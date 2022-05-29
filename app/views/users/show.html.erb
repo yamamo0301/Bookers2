@@ -15,7 +15,9 @@
     </tbody>
   </table>
   <div class="row">
-    <!--link_to-->
+    <% if @user == current_user %>
+      <%= link_to "User編集（仮）", edit_user_path(@user.id) %>
+    <% end %>
   </div>
 </div>
 
