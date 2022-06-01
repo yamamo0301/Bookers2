@@ -16,7 +16,7 @@ class BooksController < ApplicationController
   def show
   end
 
-  provate
+  private
 
   def post_image_params
     params.require(:book).permit(:title, :body)
