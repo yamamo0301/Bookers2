@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :confingure_permitted_parameters, if: :devise_controller?
-    
+
     def after_sign_in_path_for(resource)
-      about_path
+      home_about_path
     end
 
     protected
